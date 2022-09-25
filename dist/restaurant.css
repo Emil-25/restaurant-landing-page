@@ -102,7 +102,7 @@ html {
 
 .header {
   position: relative;
-  background-image: url("../../pics/hero.jpg");
+  background-image: url("../pics/hero.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -223,7 +223,7 @@ html {
 }
 
 .reserve {
-  background-image: url("../../pics/party.jpg");
+  background-image: url("../pics/party.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
