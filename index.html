@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Scrumptious</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./dist/restaurant.css">
+        <script defer src="./dist/main.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/62194b014c.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <div class="logo-name"><h2>Scrumptious!</h2></div>
+            <ul class="nav">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reserve">Reserve</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+
+        <header class="header">
+            <div class="curtain">
+                <div class="border">
+                    <h1>Hungry?</h1>
+                    <h2>
+                        Come And Fill Up Your Stomach
+                        For Affordable Price
+                    </h2>
+                </div>
+            </div>
+        </header>
+
+        <section class="menu" id="menu">
+            <div class="underline"><h1>Menu</h1></div>
+            <nav class="menu-nav">
+                <ul class="menu-tabs">
+                    <li onclick="displayTab(0)"><a href="#menu">Breakfast</a></li>
+                    <li onclick="displayTab(1)"><a href="#menu">Lunch</a></li>
+                    <li onclick="displayTab(2)"><a href="#menu">Dessert</a></li>
+                    <li onclick="displayTab(3)"><a href="#menu">Show All</a></li>
+                </ul>
+            </nav>
+            <div class="tab-content default">
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/breakfast1.jpg" alt="meal">
+                    </div>
+                    <h2>Egg + Coffee</h2>
+                    <h2>10$</h2>
+                    <button class="order">Order</button>
+                </div>
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/breakfast2.jpg" alt="meal">
+                    </div>
+                    <h2>Banana + Milk</h2>
+                    <h2>8$</h2>
+                    <button class="order">Order</button>
+                </div>
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/breakfast3.jpg" alt="meal">
+                    </div>
+                    <h2>Lavash + Honey</h2>
+                    <h2>15$</h2>
+                    <button class="order">Order</button>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/lunch1.jpg" alt="meal">
+                    </div>
+                    <h2>Barbeque</h2>
+                    <h2>20$</h2>
+                    <button class="order">Order</button>
+                </div>
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/lunch2.jpg" alt="meal">
+                    </div>
+                    <h2>Pizza</h2>
+                    <h2>12$</h2>
+                    <button class="order">Order</button>
+                </div>
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/lunch3.jpg" alt="meal">
+                    </div>
+                    <h2>Soup</h2>
+                    <h2>8$</h2>
+                    <button class="order">Order</button>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/dessert1.jpg" alt="meal">
+                    </div>
+                    <h2>Chocolate</h2>
+                    <h2>10$</h2>
+                    <button class="order">Order</button>
+                </div>
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/dessert2.jpg" alt="meal">
+                    </div>
+                    <h2>Eclair</h2>
+                    <h2>8$</h2>
+                    <button class="order">Order</button>
+                </div>
+                <div class="menu-card column-30">
+                    <div class="img-div">
+                        <img src="/pics/dessert3.jpg" alt="meal">
+                    </div>
+                    <h2>Ice Cream</h2>
+                    <h2>15$</h2>
+                    <button class="order">Order</button>
+                </div>
+            </div>
+        </section>
+        <section class="reserve" id="reserve">
+            <div class="curtain">
+                <div class="column-50 headings">
+                    <h1>Wanna Party?</h1>
+                    <h1>Reserve a Table</h1>
+                </div>
+                <div class="column-50">
+                    <form action="" class="reservation-form">
+                        <label for="name">Your Name:</label><br>
+                        <input type="text" name="name" id="name" required placeholder="Enter Name"><br>
+                        <label for="date">Date of Reservation:</label><br>
+                        <input type="date" name="date" id="date" required placeholder="Enter Date"><br>
+                        <label for="people">Number of People:</label><br>
+                        <input type="number" name="people" id="people" required placeholder="Enter Number"><br>
+                        <label for="suggestion">Suggestions:</label><br>
+                        <textarea name="suggestion" id="suggestion" cols="30" rows="8" placeholder="Extra words..."></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="about-about"><h1>About Us</h1></div>
+        <section class="about" id="about">
+            <div class="mapouter column-50">
+                <div class="gmap_canvas">
+                    <iframe 
+                    id="gmap_canvas" 
+                    src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    frameborder="0" scrolling="no" marginheight="0" 
+                    marginwidth="0">
+                    </iframe>
+                </div>
+            </div>
+            <div class="column-50">
+                <h1><i class="fa-solid fa-burger"></i> Scrumptious! <i class="fa-solid fa-burger"></i></h1>
+                <p>
+                    This restaurant was established
+                    in 2003 by Emil Rahimov and serves
+                    its customers until now.
+                </p>
+                <h4>
+                    If you have any negative feedback 
+                    about our restaurant, please send us
+                    via email:
+                </h4>
+                <form action="">
+                    <input type="text" name="email" id="email" placeholder="Enter your email">
+                    <textarea name="feedback" id="feedback" cols="30" rows="6" placeholder="Subject.."></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        <footer class="footer">
+            <address>Contact us: something@example.com</address>
+            <cite>©Emil Rahimov</cite>
+        </footer>
+    </body>
+</html>

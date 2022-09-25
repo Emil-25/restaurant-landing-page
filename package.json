@@ -1,0 +1,39 @@
+{
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/preset-env": "^7.19.1",
+    "@babel/preset-typescript": "^7.18.6",
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "@types/jquery": "^3.5.14",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
+    "babel-preset-es2015": "^6.24.1",
+    "node-sass": "^7.0.3",
+    "postcss": "^8.4.16",
+    "postcss-cli": "^10.0.0",
+    "typescript": "^4.8.3",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "name": "restaurant",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "node-sass": "node-sass ./restaurant.scss ./dist/restaurant.css",
+    "postcss": "postcss ./dist/restaurant.css -o ./dist/restaurant.css"
+  },
+  "browserslist": [
+    "defaults and supports es6-module"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.6.1"
+  }
+}
